@@ -168,3 +168,7 @@ main {
 .AdsBlock .Ads .Card .CardContent .CardContentText {
   color: #ffffff;
 }
+
+.footerTest {
+  border: solid rebeccapurple 1px;
+}
