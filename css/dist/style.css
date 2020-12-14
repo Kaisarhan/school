@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet');
+body {
+  font-family: Montserrat;
+}
+
+header {
+  background: url(/img/banner1.png) no-repeat;
+  background-size: 100% 100%;
+  height: 35rem;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container {
+  /* border: solid red 1px;  */
+}
+.container .menu {
+  padding-top: 100px;
+}
+.container .menu .gp-menu {
+  /*     ul li:hover{
+          font-size: 25px;
+          list-style-type: none;
+          padding-top: 3rem;
+          padding-bottom: 3rem;     
+      } */
+}
+.container .menu .gp-menu a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.container .menu .gp-menu a::before {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: 0.4s;
+}
+.container .menu .gp-menu a:hover:before {
+  width: 100%;
+}
+.container .menu .gp-menu ul li {
+  font-size: 22px;
+  list-style-type: none;
+  margin-bottom: 3rem;
+  height: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container .logo {
+  /* border: solid red 1px; */
+  color: red;
+}
+.container .Discription {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* search */
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  /* height: 60px; */
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;
+  width: 450px;
+  caret-color: red;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: white;
+  color: #e74c3c;
+}
+
+.search_icon {
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+/* Search */
+.NameBlock {
+  padding-top: 100px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.NewsBlock {
+  height: 100vh;
+}
+.NewsBlock .news {
+  margin-top: 100px;
+}
+.NewsBlock .news .Card {
+  border: solid 1px #e74c3c;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin: 3px;
+  cursor: pointer;
+}
+.NewsBlock .news .Card .CardImg img {
+  width: 100%;
+}
+.NewsBlock .news .Card .CardContent {
+  padding: 26px;
+}
+.AdsBlock {
+  color: white;
+  height: 100vh;
+  background: linear-gradient(to top left, #3272b0, #7048a4);
+}
+.AdsBlock .Ads {
+  margin-top: 100px;
+}
+.AdsBlock .Ads .Card {
+  border: solid 1px black;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin: 3px;
+  cursor: pointer;
+}
+.AdsBlock .Ads .Card .CardImg img {
+  width: 100%;
+}
+.AdsBlock .Ads .Card .CardContent {
+  padding: 26px;
+}
+.AdsBlock .Ads .Card .CardContent .CardContentName {
+  color: black;
+}
+.AdsBlock .Ads .Card .CardContent .CardContentText {
+  color: #ffffff;
+}
